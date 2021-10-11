@@ -32,6 +32,7 @@ export const registerAccount = (userName, userEmail, usePassword) => {
       updateProfile(auth.currentUser, {
         displayName: name,
       });
+      window.location.reload();
     })
     .catch((error) => {
       const errorCode = error.code;
